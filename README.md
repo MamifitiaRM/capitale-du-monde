@@ -4,7 +4,7 @@ Quiz de géographie full-stack : devinez la capitale de **193 pays**, continent 
 
 **Démo en ligne : https://capitale-du-monde.vercel.app/**
 
-> L'API est hébergée sur l'offre gratuite de Render
+> L'API est hébergée sur Render
 
 ## Technologies
 
