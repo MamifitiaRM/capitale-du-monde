@@ -40,8 +40,8 @@ Prérequis : Node.js 20 ou plus, et MongoDB en local (ou une URI MongoDB Atlas).
 # Backend
 cd backend
 npm install
-cp .env.example .env     # puis renseigner les variables
-npm run seed             # importe les 193 questions (peut être relancé sans risque)
+cp .env.example .env     # renseigner les variables
+npm run seed             # importe les 193 questions 
 npm run dev
 ```
 
@@ -51,22 +51,6 @@ cd Frontend
 npm install
 npm run dev
 ```
-
-Le backend tourne sur `http://localhost:3000` et le frontend sur `http://localhost:5173`.
-
-### Variables d'environnement
-
-Backend (`backend/.env`) :
-
-| Variable | Rôle |
-| --- | --- |
-| `MONGODB_URI` | Adresse de la base MongoDB |
-| `TOKEN_SECRET` | Clé secrète pour signer les JWT (longue chaîne aléatoire) |
-| `FRONTEND_URL` | Origine autorisée par le CORS |
-| `PORT` | Port du serveur (3000 par défaut) |
-| `NODE_ENV` | `production` active les cookies `secure` |
-
-Frontend (`Frontend/.env`, facultatif) : `VITE_API_URL`, l'adresse de l'API (`http://localhost:3000/api` par défaut).
 
 ## API
 
